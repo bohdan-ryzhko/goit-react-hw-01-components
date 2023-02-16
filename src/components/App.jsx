@@ -1,16 +1,13 @@
-export const App = () => {
+import "../index.scss";
+import user from '../user-info/user';
+import Profile from './profile/Profile';
+
+const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div className="wrapper">
+      <Profile userData={user} />
     </div>
   );
 };
+
+export default App;
