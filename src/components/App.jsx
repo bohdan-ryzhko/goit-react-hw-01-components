@@ -7,8 +7,8 @@ import Statistics from "./statistics/Statistics";
 const App = () => {
   return (
     <div className="wrapper">
-      {/* <Profile userData={user} /> */}
-      <Statistics title="Upload stats" stats={data}/>
+      <Profile userData={user} />
+      {/* <Statistics title="Upload stats" stats={data}/> */}
     </div>
   );
 };
