@@ -1,4 +1,4 @@
-@import-normalize;
+// @import-normalize;
 /* bring in normalize.css styles */
 
 *,
@@ -41,5 +41,16 @@ p {
   padding: 0;
 }
 
+.wrapper {
+  height: 100%;
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 15px;
+}
+
 @import './sass/profile';
 @import './sass/stats';
+@import './sass/friends';
