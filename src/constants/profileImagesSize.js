@@ -1,3 +1,3 @@
-export const imagesSize = Object.freeze({
+export const profileImagesSize = Object.freeze({
 	md: 200,
 })

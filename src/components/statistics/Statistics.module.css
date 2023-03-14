@@ -1,6 +1,7 @@
 .statistics {
 	max-width: 350px;
 	width: 100%;
+	box-shadow: 0px 0px 10px #6a6363;
 	border-top-right-radius: 5px;
 	border-top-left-radius: 5px;
 }
@@ -25,6 +26,9 @@
 .item {
 	padding: 20px 10px;
 	flex-basis: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .item:first-child {
@@ -60,6 +64,11 @@
 	background-color: cadetblue;
 }
 
-.label {}
+.label {
+	font-size: 18px;
+}
 
-.percentage {}
+.percentage {
+	font-size: 20px;
+	font-weight: 700;
+}

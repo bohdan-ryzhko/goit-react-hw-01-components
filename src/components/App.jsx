@@ -4,6 +4,9 @@ import user from "../data/user";
 import { Statistics } from "./statistics/Statistics";
 import data from "../data/data";
 
+import { FriendList } from "./friends/FriendList";
+import friends from "../data/friends";
+
 export const App = () => {
   return (
     <div className="wrapper">
@@ -15,6 +18,7 @@ export const App = () => {
         stats={user.stats}
       />
       <Statistics title="Upload stats" stats={data} />
+      <FriendList friends={friends} />
     </div>
   )
 }

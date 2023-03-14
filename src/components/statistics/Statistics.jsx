@@ -5,7 +5,7 @@ import css from "./Statistics.module.css";
 
 export const Statistics = ({ title, stats }) => {
 	return (
-		<section className={css.statistics}>
+		<section className={`${css.statistics} section`}>
 			<StatisticsTitle>{title}</StatisticsTitle>
 			<StatList stats={stats} />
 		</section>

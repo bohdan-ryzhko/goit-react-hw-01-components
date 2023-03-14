@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import css from "./Profile.module.css";
-import { imagesSize } from 'constants';
+import { profileImagesSize } from 'constants';
 
 export const Profile = ({
 	avatar,
@@ -10,13 +10,14 @@ export const Profile = ({
 	username
 }) => {
 
-	const { md } = imagesSize;
+	const { md } = profileImagesSize;
 
 	return (
-		<div className={css.profile}>
+		<div className={`${css.profile} section`}>
 			<div className={css.description}>
 				<img
 					width={md}
+					height={md}
 					src={avatar}
 					alt={tag}
 					className={css.avatar}
